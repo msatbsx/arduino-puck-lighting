@@ -16,3 +16,12 @@ where
 
 Recomended initial setting is CRGB(255, 255, 255)
 
+## FAQs & troubleshooting
+- why the strips are bilinking while power up? This is for testing purposes, if all led's and all colors are working. To remove it, please comment lines 39-47.
+- LEDs are not lighing after successfully downloading the program. Check:
+    - check if the pins in described in the file are matching those connected to the strips. 
+    - check if ground from power supply is connected to Arduino.
+    - check number of strip and other setting values. 
+    - check value of color_calibrated variable. 
+    - check if number of .addleds are matching no of strip constant `#define NUM_STRIPS`
+- still not working? Contact owner of this repo. 
