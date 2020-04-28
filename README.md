@@ -14,7 +14,10 @@ where
 - order of colors is cool/warm/amber
 - if order of colors does not match LED, can be changed in `#define COLOR_ORDER`
 
-Recomended initial setting is CRGB(255, 255, 255)
+Recomended initial setting is CRGB(255, 255, 255).
+To make the light warmer decrease first value by half: CRGB(127, 255, 255).
+To make the light cooler decrease last value by half: CRGB(255, 255, 127).
+Continiue until effect is satisfactory. 
 
 ## FAQs & troubleshooting
 - why the strips are bilinking while power up? This is for testing purposes, if all led's and all colors are working. To remove it, please comment lines 39-47.
